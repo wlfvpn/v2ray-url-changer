@@ -52,10 +52,6 @@ def alternate(url):
         url = url_parts[0] + f"&sni={host}#" + url_parts[1] 
 
     cf_good_ips = get_cf_ip()
-
-    print('host',host)
-    print('add',address)
-
     urls = []
     for cf_ip in cf_good_ips:
         if cf_ip["IP"]:

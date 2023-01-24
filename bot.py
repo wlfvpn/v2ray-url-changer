@@ -56,7 +56,7 @@ async def get_alternate_url(update: Update, context: ContextTypes.DEFAULT_TYPE) 
         await update.message.reply_text(text, parse_mode="MarkdownV2")
     else:
         await update.message.reply_text("Sorry, this doesnt look like a vless or trojan link.")
-
+    logging.info("Someone used your bot.")
 
 
 def main() -> None:
